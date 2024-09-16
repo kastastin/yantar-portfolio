@@ -1,11 +1,11 @@
-import { Button } from "@/components/ui/button";
+import HeroSection from "@/components/sections/HeroSection";
+import AboutSection from "@/components/sections/AboutSection";
 
 const Home = () => {
   return (
     <>
-      <h1>Home Page</h1>
-
-      <Button variant="outline">Primary</Button>
+      <HeroSection />
+      <AboutSection />
     </>
   );
 };
