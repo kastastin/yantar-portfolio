@@ -4,7 +4,7 @@ import { socials, socialsImgSize } from "@/constants/socials";
 
 const LeftSidebar = () => {
   return (
-    <aside className="fixed top-0 flex h-screen w-[55px] flex-col items-center border-r border-black">
+    <aside className="fixed top-0 flex h-svh w-[55px] flex-col items-center border-r border-black">
       <div className="flex-center transition-all-03 group h-[55px] w-full shrink-0 cursor-pointer border-b border-black hover:bg-black">
         <Image
           src="/icons/menu.svg"

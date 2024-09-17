@@ -18,8 +18,8 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="h-screen px-9">
-      <h1 className="pt-[68vh] font-montserrat text-3xl font-bold uppercase leading-7 tracking-[-3px]">
+    <section className="h-svh px-9">
+      <h1 className="pt-[67vh] font-montserrat text-3xl font-bold uppercase leading-7 tracking-[-3px]">
         Im Targonsky
         <br />
         Mykyta.
