@@ -1,4 +1,4 @@
-import { skills } from "@/constants/socials";
+import { skills } from "@/constants";
 import Progress from "@/components/Progress";
 
 const SkillsBlock = () => {

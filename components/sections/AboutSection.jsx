@@ -1,7 +1,9 @@
 import Image from "next/image";
 
 import Divider from "@/components/Divider";
+import { education, experience } from "@/constants";
 import SkillsBlock from "@/components/SkillsBlock";
+import CustomList from "@/components/CustomList";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 const AboutSection = () => {
@@ -67,10 +69,12 @@ const AboutSection = () => {
           <SkillsBlock />
         </TabsContent>
 
-        <TabsContent value="education">Change your education here.</TabsContent>
+        <TabsContent value="education">
+          <CustomList data={education} />
+        </TabsContent>
 
         <TabsContent value="experience">
-          Change your experience here.
+          <CustomList data={experience} />
         </TabsContent>
       </Tabs>
 

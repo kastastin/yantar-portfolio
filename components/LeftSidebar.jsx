@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { socials, socialsImgSize } from "@/constants/socials";
+import { socials, socialsImgSize } from "@/constants";
 
 const LeftSidebar = () => {
   return (
