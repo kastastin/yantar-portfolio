@@ -118,3 +118,17 @@ body {
   border-radius: 0px;
   background-color: #000;
 }
+
+/* Animations */
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--progress-width);
+  }
+}
+
+.animate-progress {
+  animation: progress 2s ease-in-out forwards;
+}

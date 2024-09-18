@@ -17,3 +17,10 @@ export const socials = [
     href: "https://www.facebook.com/profile.php?id=100005185725957",
   },
 ];
+
+export const skills = [
+  { title: "Adobe Premier Pro", level: 90 },
+  { title: "Adobe After Effect", level: 85 },
+  { title: "DaVinci", level: 80 },
+  { title: "CapCut", level: 90 },
+];
