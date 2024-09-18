@@ -34,7 +34,7 @@ const RootLayout = ({ children }) => {
         className={`${montserrat.variable} ${spaceMono.variable} ${caveat.variable} antialiased`}
       >
         <LeftSidebar />
-        <div className="ml-[55px]">{children}</div>
+        <div className="ml-[55px] px-9">{children}</div>
       </body>
     </html>
   );
