@@ -91,6 +91,13 @@ export const testimonials = [
 
 export const works = [
   {
-    
-  }
-]
+    title: "LOSE MY MIND",
+    imgSrc: "/images/works/1.png",
+    videoId: "n72ZExLaXoA",
+  },
+  {
+    title: "LOSE MY MIND2",
+    imgSrc: "/images/works/1.png",
+    videoId: "n72ZExLaXoA",
+  },
+];

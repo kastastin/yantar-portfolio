@@ -1,3 +1,5 @@
+import { works } from "@/constants";
+import WorksList from "@/components/lists/WorksList";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 const PortfolioSection = () => {
@@ -12,7 +14,9 @@ const PortfolioSection = () => {
           <TabsTrigger value="video">video</TabsTrigger>
         </TabsList>
 
-        <TabsContent value="all">Make changes to your all here.</TabsContent>
+        <TabsContent value="all">
+          <WorksList data={works} />
+        </TabsContent>
 
         <TabsContent value="reels">Change your reels here.</TabsContent>
 

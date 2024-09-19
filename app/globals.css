@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("../styles/video-player.css");
+
 :root {
   --background: #f7f6f0;
   --foreground: #171717;
