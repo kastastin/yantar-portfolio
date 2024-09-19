@@ -4,6 +4,7 @@ import Divider from "@/components/Divider";
 import { education, experience } from "@/constants";
 import SkillsBlock from "@/components/SkillsBlock";
 import CustomList from "@/components/CustomList";
+import Testimonials from "@/components/Testimonials";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 const AboutSection = () => {
@@ -78,7 +79,11 @@ const AboutSection = () => {
         </TabsContent>
       </Tabs>
 
-      <Divider marginStyle="my-5" />
+      <Divider marginStyle="mt-5 mb-10" />
+
+      <Testimonials />
+
+      <Divider marginStyle="mt-5 mb-10" />
     </section>
   );
 };

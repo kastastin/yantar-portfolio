@@ -65,3 +65,26 @@ export const experience = [
       "I worked at the military store, managing the website and social media (Instagram, TikTok) content. I devised promotions and giveaways that increased sales volume.",
   },
 ];
+
+export const testimonials = [
+  {
+    name: "@omggrave",
+    position: "Content Creator",
+    text: "I truly appreciate the quality editing! The clip turned out exactly as I envisioned - dynamic, memorable, in pink-purple tones, with stunning transitions. You captured my style perfectly and executed everything at the highest level. I'm very satisfied with the result!",
+  },
+  {
+    name: "@vyshyvanka4u",
+    position: "Embroidery Master",
+    text: "I want to express my immense gratitude for the wonderful work! The videos turned out incredibly high-quality and convey the beauty of Ukrainian embroidery. Thanks to them, I was able to attract new clients and expand my audience. I'm very pleased with the results of our collaboration!",
+  },
+  {
+    name: "@oh_my_di",
+    position: "Content Creator",
+    text: "Many thanks for the series of informative videos! Everything was done exactly according to my wishes, taking into account the smallest details. It’s especially nice that the work was completed very quickly and with high quality. I’m very satisfied with our cooperation!",
+  },
+  {
+    name: "@CONTENU",
+    position: "Content Manager",
+    text: "I appreciate your quick and high-quality help with the videos that our editors couldn’t finish. You jumped right into the work and executed everything at the highest level. The videos were in various formats and fully met our requirements.",
+  },
+];
