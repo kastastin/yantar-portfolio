@@ -1,4 +1,4 @@
-const CustomList = ({ data }) => {
+const AboutList = ({ data }) => {
   return (
     <>
       {data.map((item, index) => (
@@ -22,4 +22,4 @@ const CustomList = ({ data }) => {
   );
 };
 
-export default CustomList;
+export default AboutList;

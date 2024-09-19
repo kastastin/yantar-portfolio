@@ -1,0 +1,25 @@
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+
+const PortfolioSection = () => {
+  return (
+    <section>
+      <h2 className="h2-title">My works</h2>
+
+      <Tabs defaultValue="all" className="mt-5 w-full">
+        <TabsList variant="works">
+          <TabsTrigger value="all">all</TabsTrigger>
+          <TabsTrigger value="reels">reels</TabsTrigger>
+          <TabsTrigger value="video">video</TabsTrigger>
+        </TabsList>
+
+        <TabsContent value="all">Make changes to your all here.</TabsContent>
+
+        <TabsContent value="reels">Change your reels here.</TabsContent>
+
+        <TabsContent value="video">Change your video here.</TabsContent>
+      </Tabs>
+    </section>
+  );
+};
+
+export default PortfolioSection;

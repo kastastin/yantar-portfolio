@@ -92,10 +92,14 @@ body {
     @apply flex justify-center items-center;
   }
 
+  .h2-title {
+    @apply mt-14 font-montserrat text-3xl font-bold uppercase leading-7 tracking-[-2px];
+  }
+
   .transition-all-03 {
     transition: all 0.3s ease-in;
   }
-  
+
   .transition-all-05 {
     transition: all 0.5s ease-in;
   }

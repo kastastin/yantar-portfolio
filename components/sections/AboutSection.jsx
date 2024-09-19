@@ -3,16 +3,14 @@ import Image from "next/image";
 import Divider from "@/components/Divider";
 import { education, experience } from "@/constants";
 import SkillsBlock from "@/components/SkillsBlock";
-import CustomList from "@/components/CustomList";
+import AboutList from "@/components/lists/AboutList";
 import Testimonials from "@/components/Testimonials";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 const AboutSection = () => {
   return (
     <section>
-      <h2 className="mt-14 font-montserrat text-3xl font-bold uppercase leading-7 tracking-[-2px]">
-        About me
-      </h2>
+      <h2 className="h2-title">About me</h2>
 
       <Divider marginStyle="my-5" />
 
@@ -60,7 +58,7 @@ const AboutSection = () => {
       <Divider marginStyle="mt-5 mb-10" />
 
       <Tabs defaultValue="skills" className="w-full">
-        <TabsList>
+        <TabsList variant="about">
           <TabsTrigger value="skills">Skills</TabsTrigger>
           <TabsTrigger value="education">Education</TabsTrigger>
           <TabsTrigger value="experience">Experience</TabsTrigger>
@@ -71,11 +69,11 @@ const AboutSection = () => {
         </TabsContent>
 
         <TabsContent value="education">
-          <CustomList data={education} />
+          <AboutList data={education} />
         </TabsContent>
 
         <TabsContent value="experience">
-          <CustomList data={experience} />
+          <AboutList data={experience} />
         </TabsContent>
       </Tabs>
 

@@ -88,3 +88,9 @@ export const testimonials = [
     text: "I appreciate your quick and high-quality help with the videos that our editors couldn’t finish. You jumped right into the work and executed everything at the highest level. The videos were in various formats and fully met our requirements.",
   },
 ];
+
+export const works = [
+  {
+    
+  }
+]

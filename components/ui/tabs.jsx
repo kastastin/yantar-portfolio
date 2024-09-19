@@ -5,39 +5,62 @@ import * as TabsPrimitive from "@radix-ui/react-tabs";
 
 import { cn } from "@/lib/utils";
 
+const TabsVariantContext = React.createContext("about");
+
 const Tabs = TabsPrimitive.Root;
 
-const TabsList = React.forwardRef(({ className, ...props }, ref) => (
-  <TabsPrimitive.List
-    ref={ref}
-    className={cn(
-      "inline-flex min-h-[50px] border border-black flex-col items-center justify-center bg-transparent text-black w-full",
-      className
-    )}
-    {...props}
-  />
-));
+const TabsList = React.forwardRef(
+  ({ className, variant = "about", ...props }, ref) => {
+    const baseStyles = "inline-flex text-black w-full border-black";
+
+    const variants = {
+      about: "border flex-col",
+      works: "border-b pb-3 gap-x-5",
+    };
+
+    return (
+      <TabsVariantContext.Provider value={variant}>
+        <TabsPrimitive.List
+          ref={ref}
+          className={cn(baseStyles, variants[variant], className)}
+          {...props}
+        />
+      </TabsVariantContext.Provider>
+    );
+  }
+);
 TabsList.displayName = TabsPrimitive.List.displayName;
 
-const TabsTrigger = React.forwardRef(({ className, ...props }, ref) => (
-  <TabsPrimitive.Trigger
-    ref={ref}
-    className={cn(
-      "inline-flex border-b px-4 border-black items-center justify-start whitespace-nowrap h-[50px] w-full text-sm font-medium transition-all-03 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-black data-[state=active]:text-white last:border-b-0 uppercase",
-      className
-    )}
-    {...props}
-  />
-));
+const TabsTrigger = React.forwardRef(
+  ({ className, variant, ...props }, ref) => {
+    const contextVariant = React.useContext(TabsVariantContext);
+    const appliedVariant = variant || contextVariant;
+    
+    const baseStyles =
+      "inline-flex focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 uppercase font-medium border-b";
+
+    const variants = {
+      about:
+        "px-4 items-center h-[50px] w-full text-sm last:border-b-0 data-[state=active]:bg-black data-[state=active]:text-white border-black transition-all-03",
+      works:
+        "text-xs data-[state=active]:pb-0.5 data-[state=active]:border-black border-transparent",
+    };
+
+    return (
+      <TabsPrimitive.Trigger
+        ref={ref}
+        className={cn(baseStyles, variants[appliedVariant], className)}
+        {...props}
+      />
+    );
+  }
+);
 TabsTrigger.displayName = TabsPrimitive.Trigger.displayName;
 
 const TabsContent = React.forwardRef(({ className, ...props }, ref) => (
   <TabsPrimitive.Content
     ref={ref}
-    className={cn(
-      "mt-5 focus-visible:outline-none",
-      className
-    )}
+    className={cn("mt-5 focus-visible:outline-none", className)}
     {...props}
   />
 ));
