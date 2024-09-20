@@ -12,6 +12,7 @@ const PortfolioSection = () => {
           <TabsTrigger value="all">all</TabsTrigger>
           <TabsTrigger value="reels">reels</TabsTrigger>
           <TabsTrigger value="video">video</TabsTrigger>
+          <TabsTrigger value="intro">intro</TabsTrigger>
         </TabsList>
 
         <TabsContent value="all">
@@ -20,7 +21,13 @@ const PortfolioSection = () => {
 
         <TabsContent value="reels">Change your reels here.</TabsContent>
 
-        <TabsContent value="video">Change your video here.</TabsContent>
+        <TabsContent value="video">
+          <WorksList data={works.filter((work) => work.type === "video")} />
+        </TabsContent>
+
+        <TabsContent value="intro">
+          <WorksList data={works.filter((work) => work.type === "intro")} />
+        </TabsContent>
       </Tabs>
     </section>
   );

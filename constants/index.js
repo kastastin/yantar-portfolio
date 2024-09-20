@@ -91,13 +91,86 @@ export const testimonials = [
 
 export const works = [
   {
-    title: "LOSE MY MIND",
-    imgSrc: "/images/works/1.png",
-    videoId: "n72ZExLaXoA",
+    title: "Waiting is hard",
+    imgSrc: "/images/works/5.png",
+    videoId: "rLe9c9WNTOo",
+    type: "video",
   },
   {
-    title: "LOSE MY MIND2",
+    title: "Dizel Show",
+    imgSrc: "/images/works/4.png",
+    videoId: "qO62cgKA3dw",
+    type: "video",
+  },
+  {
+    title: "Obladunok",
+    imgSrc: "/images/works/3.png",
+    videoId: "Ob_coDLYtMQ",
+    type: "video",
+  },
+  {
+    title: "Winner",
+    imgSrc: "/images/works/2.png",
+    videoId: "dpLM7-ffykM",
+    type: "video",
+  },
+  {
+    title: "Lose my mind",
     imgSrc: "/images/works/1.png",
     videoId: "n72ZExLaXoA",
+    type: "video",
+  },
+  {
+    title: "Aleo News",
+    imgSrc: "/images/works/6.png",
+    videoId: "nmRzken6-uA",
+    type: "intro",
+    isTitleHidden: true,
+  },
+  {
+    title: "Dizel Show Intro",
+    imgSrc: "/images/works/7.png",
+    videoId: "RRQHeIFeTNw",
+    type: "intro",
+    isTitleHidden: true,
+    imgStyle: { filter: "brightness(0.7)" },
+  },
+  {
+    title: "SUI Network",
+    imgSrc: "/images/works/8.png",
+    videoId: "xJDdnD7_364",
+    type: "intro",
+    isTitleHidden: true,
+  },
+  {
+    title: "Brama",
+    imgSrc: "/images/works/9.png",
+    videoId: "KhZwyijInHM",
+    type: "intro",
+    isTitleHidden: true,
+    imgStyle: { filter: "brightness(0.7)" },
+  },
+];
+
+export const contacts = [
+  {
+    src: "/icons/mail.svg",
+    alt: "Email",
+    text: "nimirebigmir55@gmail.com",
+  },
+  {
+    src: "/icons/phone.svg",
+    alt: "Phone",
+    text: "+380683932745",
+  },
+  {
+    src: "/icons/geo.svg",
+    alt: "Geolocation",
+    text: "Kyiv, Ukraine",
+  },
+  {
+    src: "/icons/clock.svg",
+    alt: "Working time",
+    text: "MON - FRI | 9AM - 5PM",
   },
 ];

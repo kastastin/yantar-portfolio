@@ -18,19 +18,22 @@ const WorksList = ({ data }) => {
       {data.map((item) => (
         <div
           key={item.title}
-          className="relative cursor-pointer"
+          className="transition-all-03 group relative cursor-pointer overflow-hidden border border-black hover:brightness-150"
           onClick={() => handleOpen(item.videoId)}
         >
-          <span className="absolute left-1/2 top-1/2 w-2/3 -translate-x-1/2 -translate-y-1/2 text-center text-white">
-            {item.title}
-          </span>
+          {!item?.isTitleHidden && (
+            <span className="transition-all-05 absolute left-1/2 top-1/2 z-10 w-max -translate-x-1/2 -translate-y-1/2 px-2 py-1 text-center text-sm font-bold tracking-wider text-white group-hover:bg-black group-hover:text-base group-hover:invert">
+              {item.title}
+            </span>
+          )}
 
           <Image
             src={item.imgSrc}
             alt={item.title}
             width={200}
             height={200}
-            className="h-auto w-full border border-black"
+            className="transition-all-05 h-auto w-full group-hover:scale-105"
+            style={item?.imgStyle}
           />
         </div>
       ))}
