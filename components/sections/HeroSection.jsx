@@ -19,18 +19,18 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="h-dvh w-full">
+    <section id="home" className="h-dvh w-full">
       <Image
         src="/images/phone.png"
         alt="Phone"
         width={200}
         height={400}
         priority
-        className="absolute left-1/2 top-14 h-[50vh] w-auto translate-x-[calc(-50%+22.5px)] rotate-12"
+        className="absolute left-1/2 top-[75px] h-[50vh] w-auto translate-x-[calc(-50%+22.5px)] rotate-12"
       />
 
       {/* Delete:  */}
-      <h1 className="pt-[67vh] font-montserrat text-3xl font-bold uppercase leading-7 tracking-[-3px]">
+      <h1 className="pt-[70vh] font-montserrat text-3xl font-bold uppercase leading-7 tracking-[-3px]">
         Im Targonsky
         <br />
         Mykyta.

@@ -3,10 +3,15 @@
 @tailwind utilities;
 
 @import url("../styles/video-player.css");
+@import url("../styles/menu-animation.css");
 
 :root {
   --background: #f7f6f0;
   --foreground: #171717;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @media (prefers-color-scheme: dark) {

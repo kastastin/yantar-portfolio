@@ -9,7 +9,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 const AboutSection = () => {
   return (
-    <section>
+    <section id="about">
       <h2 className="h2-title">About me</h2>
 
       <Divider marginStyle="my-5" />

@@ -1,3 +1,26 @@
+export const menuLinks = [
+  {
+    title: "Home",
+    icon: "/icons/home.svg",
+    href: "#home",
+  },
+  {
+    title: "About",
+    icon: "/icons/info.svg",
+    href: "#about",
+  },
+  {
+    title: "Works",
+    icon: "/icons/works.svg",
+    href: "#works",
+  },
+  {
+    title: "Contact",
+    icon: "/icons/phone.svg",
+    href: "#contact",
+  },
+]
+
 export const socials = [
   {
     src: "/icons/telegram.svg",
@@ -95,18 +118,6 @@ export const works = [
     type: "video",
   },
   {
-    title: "Dizel Show",
-    imgSrc: "/images/works/4.png",
-    videoId: "qO62cgKA3dw",
-    type: "video",
-  },
-  {
-    title: "Obladunok",
-    imgSrc: "/images/works/3.png",
-    videoId: "Ob_coDLYtMQ",
-    type: "video",
-  },
-  {
     title: "Winner",
     imgSrc: "/images/works/2.png",
     videoId: "dpLM7-ffykM",
@@ -119,16 +130,21 @@ export const works = [
     type: "video",
   },
   {
-    title: "Aleo News",
-    imgSrc: "/images/works/6.png",
-    videoId: "nmRzken6-uA",
-    type: "intro",
-    isTitleHidden: true,
+    title: "Obladunok",
+    imgSrc: "/images/works/3.png",
+    videoId: "Ob_coDLYtMQ",
+    type: "video",
   },
   {
-    title: "Dizel Show Intro",
-    imgSrc: "/images/works/7.png",
-    videoId: "RRQHeIFeTNw",
+    title: "Dizel Show",
+    imgSrc: "/images/works/4.png",
+    videoId: "qO62cgKA3dw",
+    type: "video",
+  },
+  {
+    title: "Brama",
+    imgSrc: "/images/works/9.png",
+    videoId: "KhZwyijInHM",
     type: "intro",
     isTitleHidden: true,
     imgStyle: { filter: "brightness(0.7)" },
@@ -141,9 +157,16 @@ export const works = [
     isTitleHidden: true,
   },
   {
-    title: "Brama",
-    imgSrc: "/images/works/9.png",
-    videoId: "KhZwyijInHM",
+    title: "Aleo News",
+    imgSrc: "/images/works/6.png",
+    videoId: "nmRzken6-uA",
+    type: "intro",
+    isTitleHidden: true,
+  },
+  {
+    title: "Dizel Show Intro",
+    imgSrc: "/images/works/7.png",
+    videoId: "RRQHeIFeTNw",
     type: "intro",
     isTitleHidden: true,
     imgStyle: { filter: "brightness(0.7)" },

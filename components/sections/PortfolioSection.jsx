@@ -4,7 +4,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 const PortfolioSection = () => {
   return (
-    <section>
+    <section id="works">
       <h2 className="h2-title">My works</h2>
 
       <Tabs defaultValue="all" className="mt-5 w-full">
