@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import Image from "next/image";
 
+import { toast } from "@/hooks/use-toast";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
@@ -28,15 +29,27 @@ const ContactForm = () => {
       const response = await fetch(requestURL);
       const data = await response.json();
 
-      if (!data.ok) throw new Error("Failed to send message");
-      alert("Message successfully sent!");
-
+      if (!data.ok) return toast({
+        title: "Error sending message!",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      });;
+      
       // Clear inputs
       inputNameRef.current.value = "";
       inputEmailRef.current.value = "";
       inputMessageRef.current.value = "";
+
+      toast({
+        title: "Message successfully sent!",
+        description: "I will get back to you as soon as possible.",
+      });
     } catch (error) {
-      alert("Error sending message! Please try again.");
+      return toast({
+        title: "Error sending message!",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
     }
   };
 

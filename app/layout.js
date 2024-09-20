@@ -1,6 +1,8 @@
 import { Montserrat, Space_Mono as SM, Caveat } from "next/font/google";
 
 import "./globals.css";
+
+import { Toaster } from "@/components/ui/toaster";
 import LeftSidebar from "@/components/LeftSidebar";
 
 const montserrat = Montserrat({
@@ -34,7 +36,8 @@ const RootLayout = ({ children }) => {
         className={`${montserrat.variable} ${spaceMono.variable} ${caveat.variable} antialiased`}
       >
         <LeftSidebar />
-        <div className="ml-[55px] px-9">{children}</div>
+        <main className="ml-[55px] px-9">{children}</main>
+        <Toaster />
       </body>
     </html>
   );
