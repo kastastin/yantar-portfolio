@@ -54,7 +54,7 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={formHandler} className="flex flex-col gap-y-5">
+    <form onSubmit={formHandler} className="flex flex-col gap-y-5 sm:gap-y-10">
       <div className="relative flex items-center">
         <Input type="name" placeholder="Name" ref={inputNameRef} required />
       </div>

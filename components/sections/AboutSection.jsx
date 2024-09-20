@@ -20,7 +20,7 @@ const AboutSection = () => {
         width={200}
         height={200}
         priority
-        className="h-auto w-full border border-black"
+        className="h-auto w-full border border-black object-cover xs:h-[210px]"
       />
 
       <h3 className="h3-title mt-10">Mykyta Targonsky</h3>

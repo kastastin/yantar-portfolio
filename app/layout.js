@@ -26,7 +26,9 @@ const caveat = Caveat({
 export const metadata = {
   title: "Yantar's Portfolio",
   description: "My personal portfolio website. Check out my projects!",
-  // TODO: add icon
+  icons: {
+    icon: "/icons/site-logo.svg",
+  },
 };
 
 const RootLayout = ({ children }) => {
@@ -36,7 +38,7 @@ const RootLayout = ({ children }) => {
         className={`${montserrat.variable} ${spaceMono.variable} ${caveat.variable} antialiased`}
       >
         <LeftSidebar />
-        <main className="ml-[55px] px-9">{children}</main>
+        <main className="ml-[55px] px-9 sm:px-[55px]">{children}</main>
         <Toaster />
       </body>
     </html>

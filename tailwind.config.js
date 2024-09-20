@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: "440px",
+      },
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],
         spaceGrotesk: ["var(--font-spaceMono)"],

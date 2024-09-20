@@ -14,7 +14,7 @@ const WorksList = ({ data }) => {
   };
 
   return (
-    <div className="space-y-5">
+    <div className="space-y-5 sm:space-y-10">
       {data.map((item) => (
         <div
           key={item.title}
@@ -32,7 +32,7 @@ const WorksList = ({ data }) => {
             alt={item.title}
             width={200}
             height={200}
-            className="transition-all-05 h-auto w-full group-hover:scale-105"
+            className="transition-all-05 h-auto w-full object-cover group-hover:scale-105 xs:h-[210px]"
             style={item?.imgStyle}
           />
         </div>
