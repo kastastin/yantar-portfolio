@@ -5,7 +5,7 @@ import Divider from "@/components/Divider";
 
 const Footer = () => {
   return (
-    <footer className="mb-5 mt-10">
+    <footer className="mb-5 mt-20">
       <Divider marginStyle="mb-5" />
 
       <p className="text-center text-xs">

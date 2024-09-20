@@ -98,6 +98,10 @@ body {
     @apply mt-14 font-montserrat text-3xl font-bold uppercase leading-7 tracking-[-2px];
   }
 
+  .h3-title {
+    @apply text-2xl font-bold leading-7 tracking-[-2px];
+  }
+
   .transition-all-03 {
     transition: all 0.3s ease-in;
   }

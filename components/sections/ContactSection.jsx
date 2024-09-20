@@ -11,7 +11,9 @@ const ContactSection = () => {
 
       <ContactList />
 
-      <Divider marginStyle="my-5" />
+      <h3 className="h3-title mt-12">Message Me</h3>
+
+      <Divider marginStyle="mt-1 mb-5" width="w-6" />
 
       <ContactForm />
     </section>

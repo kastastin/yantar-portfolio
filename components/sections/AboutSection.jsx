@@ -23,9 +23,7 @@ const AboutSection = () => {
         className="h-auto w-full border border-black"
       />
 
-      <h3 className="mt-10 text-2xl font-bold leading-7 tracking-[-2px]">
-        Mykyta Targonsky
-      </h3>
+      <h3 className="h3-title mt-10">Mykyta Targonsky</h3>
 
       <Divider marginStyle="mt-1" width="w-6" />
 
