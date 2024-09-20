@@ -1,3 +1,4 @@
+import Footer from "@/components/sections/Footer";
 import HeroSection from "@/components/sections/HeroSection";
 import AboutSection from "@/components/sections/AboutSection";
 import ContactSection from "@/components/sections/ContactSection";
@@ -10,6 +11,7 @@ const Home = () => {
       <AboutSection />
       <PortfolioSection />
       <ContactSection />
+      <Footer />
     </>
   );
 };

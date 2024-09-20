@@ -1,5 +1,3 @@
-export const socialsImgSize = 25;
-
 export const socials = [
   {
     src: "/icons/telegram.svg",

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { socials, socialsImgSize } from "@/constants";
+import { socials } from "@/constants";
 
 const LeftSidebar = () => {
   return (
@@ -33,8 +33,8 @@ const LeftSidebar = () => {
             <Image
               src={link.src}
               alt={link.alt}
-              width={socialsImgSize}
-              height={socialsImgSize}
+              width={25}
+              height={25}
               className="transition-all-05 group-hover:invert"
             />
           </a>

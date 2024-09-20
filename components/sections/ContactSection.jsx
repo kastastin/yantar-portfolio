@@ -1,5 +1,6 @@
 import Divider from "@/components/Divider";
-import ContactList from "../lists/ContactList";
+import ContactForm from "@/components/ContactForm";
+import ContactList from "@/components/lists/ContactList";
 
 const ContactSection = () => {
   return (
@@ -11,6 +12,8 @@ const ContactSection = () => {
       <ContactList />
 
       <Divider marginStyle="my-5" />
+
+      <ContactForm />
     </section>
   );
 };
