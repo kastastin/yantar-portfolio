@@ -13,9 +13,9 @@ const LeftSidebar = () => {
 
   return (
     <>
-      <aside className="fixed top-0 flex h-dvh w-[55px] flex-col items-center border-r border-black">
+      <aside className="fixed top-0 flex h-dvh w-[55px] flex-col items-center border-r border-black md:w-[75px]">
         <div
-          className="flex-center h-[55px] w-full shrink-0 cursor-pointer border-b border-black"
+          className="flex-center h-[55px] w-full shrink-0 cursor-pointer border-b border-black md:h-[75px]"
           onClick={toggleMenu}
         >
           <button className={`menu menu-anim ${isOpen && "is-active"}`}>
@@ -24,7 +24,7 @@ const LeftSidebar = () => {
         </div>
 
         <p className="flex-center relative mb-auto size-full">
-          <span className="absolute rotate-[270deg] font-caveat text-4xl font-medium">
+          <span className="absolute rotate-[270deg] font-caveat text-4xl font-medium md:text-5xl">
             Yantar
           </span>
         </p>
@@ -36,14 +36,14 @@ const LeftSidebar = () => {
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-center transition-all-03 group h-[55px] border-t border-black hover:bg-black"
+              className="flex-center transition-all-03 group h-[55px] border-t border-black hover:bg-black md:h-[75px]"
             >
               <Image
                 src={link.src}
                 alt={link.alt}
                 width={25}
                 height={25}
-                className="transition-all-05 group-hover:invert"
+                className="transition-all-05 group-hover:invert md:size-[35px]"
               />
             </a>
           ))}

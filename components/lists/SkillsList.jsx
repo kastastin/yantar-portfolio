@@ -1,12 +1,12 @@
 import { skills } from "@/constants";
 import Progress from "@/components/Progress";
 
-const SkillsBlock = () => {
+const SkillsList = () => {
   return (
     <>
       {skills.map((skill) => (
         <div key={skill.title} className="space-y-2">
-          <div className="mt-4 flex justify-between font-bold">
+          <div className="mt-4 flex justify-between font-bold md:mt-10 md:text-xl">
             <span>{skill.title}</span>
             <span>{skill.level}%</span>
           </div>
@@ -18,4 +18,4 @@ const SkillsBlock = () => {
   );
 };
 
-export default SkillsBlock;
+export default SkillsList;

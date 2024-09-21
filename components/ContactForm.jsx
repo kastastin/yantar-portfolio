@@ -74,7 +74,7 @@ const ContactForm = () => {
       <button
         href="/cv.pdf"
         download
-        className="transition-all-03 group inline-flex w-max items-center gap-x-2 rounded-full border border-black bg-black px-6 py-2 font-montserrat text-xs font-semibold uppercase text-white hover:bg-transparent hover:text-black"
+        className="transition-all-03 group inline-flex w-max items-center gap-x-2 rounded-full border border-black bg-black px-6 py-2 font-montserrat text-xs font-semibold uppercase text-white hover:bg-transparent hover:text-black md:gap-x-3 md:py-3 md:text-base"
       >
         Send message
         <Image
@@ -82,7 +82,7 @@ const ContactForm = () => {
           alt="Message"
           width={14}
           height={14}
-          className="transition-all-03 relative invert group-hover:invert-0"
+          className="transition-all-03 relative invert group-hover:invert-0 md:size-6"
         />
       </button>
     </form>

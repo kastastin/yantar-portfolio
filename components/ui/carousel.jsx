@@ -172,7 +172,7 @@ const CarouselPrevious = React.forwardRef(
         variant={variant}
         size={size}
         className={cn(
-          "size-8 mt-5 border border-black rounded-none cursor-pointer disabled:opacity-30 hover:bg-black transition-all-03",
+          "size-8 md:size-10 md:mt-8 mt-5 border border-black rounded-none cursor-pointer disabled:opacity-30 hover:bg-black transition-all-03",
           orientation === "horizontal"
             ? ""
             : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -182,7 +182,7 @@ const CarouselPrevious = React.forwardRef(
         onClick={scrollPrev}
         {...props}
       >
-        <ChevronLeftIcon className="transition-all-03 size-8 hover:text-white" />
+        <ChevronLeftIcon className="transition-all-03 size-8 hover:text-white md:size-10" />
         <span className="sr-only">Previous slide</span>
       </Button>
     );
@@ -200,7 +200,7 @@ const CarouselNext = React.forwardRef(
         variant={variant}
         size={size}
         className={cn(
-          "size-8 mt-5 ml-2 border border-black rounded-none cursor-pointer disabled:opacity-30 hover:bg-black transition-all-03",
+          "size-8 mt-5 md:mt-8 ml-2 md:size-10 border border-black rounded-none cursor-pointer disabled:opacity-30 hover:bg-black transition-all-03",
           orientation === "horizontal"
             ? ""
             : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -210,7 +210,7 @@ const CarouselNext = React.forwardRef(
         onClick={scrollNext}
         {...props}
       >
-        <ChevronRightIcon className="transition-all-03 size-8 hover:text-white" />
+        <ChevronRightIcon className="transition-all-03 size-8 hover:text-white md:size-10" />
         <span className="sr-only">Next slide</span>
       </Button>
     );

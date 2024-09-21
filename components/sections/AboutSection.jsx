@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import Divider from "@/components/Divider";
 import { education, experience } from "@/constants";
-import SkillsBlock from "@/components/SkillsBlock";
+import SkillsList from "@/components/lists/SkillsList";
 import AboutList from "@/components/lists/AboutList";
 import Testimonials from "@/components/Testimonials";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
@@ -12,7 +12,7 @@ const AboutSection = () => {
     <section id="about">
       <h2 className="h2-title">About me</h2>
 
-      <Divider marginStyle="my-5" />
+      <Divider marginStyle="my-5 md:my-10" />
 
       <Image
         src="/icons/about.svg"
@@ -25,13 +25,13 @@ const AboutSection = () => {
 
       <h3 className="h3-title mt-10">Mykyta Targonsky</h3>
 
-      <Divider marginStyle="mt-1" width="w-6" />
+      <Divider marginStyle="mt-1 md:mt-2" width="w-6" />
 
-      <p className="mt-2 text-sm tracking-tight">Video Editor</p>
+      <p className="mt-2 text-sm tracking-tight md:text-lg">Video Editor</p>
 
-      <Divider marginStyle="my-5" />
+      <Divider marginStyle="my-5 md:my-10" />
 
-      <p className="font-montserrat text-sm font-medium">
+      <p className="font-montserrat text-sm font-medium md:text-lg">
         I am responsible, sociable, and can always find a common language. I am
         resistant to stressful situations, not at all conflict-averse, respect
         other people&apos;s opinions, and work for results. I have always had
@@ -41,7 +41,7 @@ const AboutSection = () => {
       <a
         href="/cv.pdf"
         download
-        className="transition-all-03 group mt-10 inline-flex items-center gap-x-2 rounded-full border border-black bg-black px-6 py-2 font-montserrat text-xs font-semibold uppercase text-white hover:bg-transparent hover:text-black"
+        className="transition-all-03 group mt-10 inline-flex items-center gap-x-2 rounded-full border border-black bg-black px-6 py-2 font-montserrat text-xs font-semibold uppercase text-white hover:bg-transparent hover:text-black md:gap-x-3 md:py-3 md:text-base"
       >
         Download CV
         <Image
@@ -49,11 +49,11 @@ const AboutSection = () => {
           alt="Download"
           width={14}
           height={14}
-          className="transition-all-03 relative translate-y-[-1.5px] invert group-hover:invert-0"
+          className="transition-all-03 relative translate-y-[-1.5px] invert group-hover:invert-0 md:size-5"
         />
       </a>
 
-      <Divider marginStyle="mt-5 mb-10" />
+      <Divider marginStyle="mt-5 mb-10 md:mt-10 md:mb-14" />
 
       <Tabs defaultValue="skills" className="w-full">
         <TabsList variant="about">
@@ -63,7 +63,7 @@ const AboutSection = () => {
         </TabsList>
 
         <TabsContent value="skills">
-          <SkillsBlock />
+          <SkillsList />
         </TabsContent>
 
         <TabsContent value="education">
@@ -75,11 +75,11 @@ const AboutSection = () => {
         </TabsContent>
       </Tabs>
 
-      <Divider marginStyle="mt-5 mb-10" />
+      <Divider marginStyle="mt-5 mb-10 md:mt-10 md:mb-20" />
 
       <Testimonials />
 
-      <Divider marginStyle="mt-5 mb-10" />
+      <Divider marginStyle="mt-5 mb-10 md:mt-10 md:mb-20" />
     </section>
   );
 };

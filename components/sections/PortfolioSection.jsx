@@ -7,7 +7,7 @@ const PortfolioSection = () => {
     <section id="works">
       <h2 className="h2-title">My works</h2>
 
-      <Tabs defaultValue="all" className="mt-5 w-full">
+      <Tabs defaultValue="all" className="mt-5 w-full md:mt-8">
         <TabsList variant="works">
           <TabsTrigger value="all">all</TabsTrigger>
           <TabsTrigger value="reels">reels</TabsTrigger>

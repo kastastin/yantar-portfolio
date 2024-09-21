@@ -15,7 +15,7 @@ const TabsList = React.forwardRef(
 
     const variants = {
       about: "border flex-col",
-      works: "border-b pb-3 gap-x-5",
+      works: "border-b pb-3 gap-x-5 md:pb-5",
     };
 
     return (
@@ -41,9 +41,9 @@ const TabsTrigger = React.forwardRef(
 
     const variants = {
       about:
-        "px-4 items-center h-[50px] w-full text-sm last:border-b-0 data-[state=active]:bg-black data-[state=active]:text-white border-black transition-all-03",
+        "px-4 items-center h-[50px] w-full text-sm last:border-b-0 data-[state=active]:bg-black data-[state=active]:text-white border-black transition-all-03 md:text-lg md:h-[60px]",
       works:
-        "text-xs data-[state=active]:pb-0.5 data-[state=active]:border-black border-transparent",
+        "text-xs data-[state=active]:pb-0.5 data-[state=active]:border-black border-transparent md:text-lg md:pb-1",
     };
 
     return (
@@ -60,7 +60,7 @@ TabsTrigger.displayName = TabsPrimitive.Trigger.displayName;
 const TabsContent = React.forwardRef(({ className, ...props }, ref) => (
   <TabsPrimitive.Content
     ref={ref}
-    className={cn("mt-5 focus-visible:outline-none", className)}
+    className={cn("mt-5 md:mt-10 focus-visible:outline-none", className)}
     {...props}
   />
 ));

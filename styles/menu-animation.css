@@ -115,3 +115,29 @@
 .menu-slide.open {
   top: 0;
 }
+
+/* Adaptive */
+@media (min-width: 768px) {
+  .menu {
+    width: 75px;
+    height: 75px;
+  }
+
+  .menu span {
+    top: 36px;
+  }
+
+  .menu span::before {
+    top: -10px;
+  }
+
+  .menu span::after {
+    bottom: -10px;
+  }
+
+  .menu-slide {
+    left: 75px;
+    width: calc(100% - 75px);
+    height: 75px;
+  }
+}

@@ -7,13 +7,13 @@ const ContactSection = () => {
     <section id="contact">
       <h2 className="h2-title">Get in touch</h2>
 
-      <Divider marginStyle="my-5" />
+      <Divider marginStyle="my-5 md:my-10" />
 
       <ContactList />
 
-      <h3 className="h3-title mt-12">Message Me</h3>
+      <h3 className="h3-title mt-12 md:mt-14">Message Me</h3>
 
-      <Divider marginStyle="mt-1 mb-5" width="w-6" />
+      <Divider marginStyle="mt-1 mb-5 md:mt-2" width="w-6" />
 
       <ContactForm />
     </section>

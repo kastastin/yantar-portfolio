@@ -8,7 +8,9 @@ const MenuList = () => {
     const targetElement = document.querySelector(href);
 
     if (targetElement) {
-      const offset = 75; // px from top (55px + 5mt)
+      // 75px (55px + 5mt) | md: 115px (75px + 10mt)
+      // TODO: check
+      const offset = window.innerWidth > 768 ? 115 : 75;
       const elementPosition = targetElement.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
 
@@ -33,7 +35,7 @@ const MenuList = () => {
               alt={link.title}
               width={25}
               height={25}
-              className="transition-all-05 group-hover:invert"
+              className="transition-all-05 group-hover:invert md:size-[35px]"
             />
           </a>
         </li>
