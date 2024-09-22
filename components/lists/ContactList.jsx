@@ -3,7 +3,7 @@ import Image from "next/image";
 import { contacts } from "@/constants";
 
 const ContactList = () => (
-  <div className="space-y-5 md:space-y-8">
+  <div className="space-y-5 md:space-y-8 lg:self-center 2xl:self-start">
     {contacts.map((item) => (
       <div
         key={item.src}

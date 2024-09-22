@@ -27,7 +27,7 @@ const MenuList = () => {
         >
           <a
             href={link.href}
-            className="flex-center size-full"
+            className="flex-center size-full gap-x-3 group-hover:text-white"
             onClick={(e) => handleClick(e, link.href)}
           >
             <Image
@@ -37,6 +37,8 @@ const MenuList = () => {
               height={25}
               className="transition-all-05 group-hover:invert md:size-[35px]"
             />
+
+            <span className="transition-all-05 text-2xl">{link.title}</span>
           </a>
         </li>
       ))}

@@ -14,11 +14,11 @@ const WorksList = ({ data }) => {
   };
 
   return (
-    <div className="space-y-5 sm:space-y-10">
+    <div className="flex flex-col gap-y-5 sm:gap-y-10 md:flex-row md:flex-wrap md:gap-x-10 lg:gap-[50px]">
       {data.map((item) => (
         <div
           key={item.title}
-          className="transition-all-03 group relative cursor-pointer overflow-hidden border border-black hover:brightness-150"
+          className="transition-all-03 group relative cursor-pointer overflow-hidden border border-black hover:brightness-150 md:w-[calc(50%-20px)] lg:w-[calc(33%-31px)]"
           onClick={() => handleOpen(item.videoId)}
         >
           {!item?.isTitleHidden && (
@@ -32,7 +32,7 @@ const WorksList = ({ data }) => {
             alt={item.title}
             width={200}
             height={200}
-            className="transition-all-05 h-auto w-full object-cover group-hover:scale-105 xs:h-[210px]"
+            className="transition-all-05 h-auto w-full object-cover group-hover:scale-105 xs:h-[210px] 2xl:h-auto"
             style={item?.imgStyle}
           />
         </div>

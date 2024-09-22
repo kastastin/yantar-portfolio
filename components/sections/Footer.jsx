@@ -5,10 +5,10 @@ import Divider from "@/components/Divider";
 
 const Footer = () => {
   return (
-    <footer className="mb-5 mt-20 md:mt-14">
-      <Divider marginStyle="mb-5" />
+    <footer className="mb-5 mt-20 md:mt-14 2xl:mb-10">
+      <Divider marginStyle="mb-5 2xl:mb-10" />
 
-      <p className="text-center text-xs md:text-base">
+      <p className="text-center text-xs md:text-base 2xl:text-lg">
         © 2024 Targonsky Mykyta Portfolio. All Rights Reserved.
       </p>
 
@@ -26,7 +26,7 @@ const Footer = () => {
               alt={link.alt}
               width={20}
               height={20}
-              className="md:size-[30px]"
+              className="md:size-[30px] 2xl:size-[35px]"
             />
           </a>
         ))}
